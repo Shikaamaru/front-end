@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>triangle</title>
+
+</head>
+<style>
+    
+body{
+    background-color: black;
+}
+
+.centerbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100vh;
+}
+.loader-triangle-3 polygon{
+    stroke:#ffeb3b;
+   
+stroke-dasharray: 17;
+animation :anm-tr-3-move 2.5s
+cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+@keyframes anm-tr-3-move  {
+  to{
+
+    stroke-dashoffset: -136;
+  }
+
+}
+</style>
+<body>
+    
+    <div class="centerbody">
+        <div class="loader-triangle-3">
+            <svg id="triangle" width="50px" height ="50px"
+            veiwbox="-3 4 39 39">
+        <polygon fill="transparent " stroke ="#ffeb3b"
+    stroke-width="2" points ="16,0,32,32 0,32">
+</polygon>
+</svg>
+        </div>
+    </div>
+    
+</body>
+</html>
